@@ -1,18 +1,18 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import {Text, View, Image, scrollV } from 'react-native';
-
+import {Text, View, Image } from 'react-native';
+import Item from '../Component/Item';
 
 
 export default function App() {
-    let homeStyles = require('../Styles/HomeStyle');
-    
+    let home = require('../Styles/HomeStyle');
+    let position = require('../Styles/PositionStyle');
     return (
-    <View options={{headerShown: false}} style={homeStyles.container}>
-        <Image style={require('../Styles/ImageStyle').backgroundImage} source={require('../Images/background2.jpg')}/>
+    <View options={{headerShown: false}} style={home.container}>
         <StatusBar style="inverted" />
-        
-        <Text style={require('../Styles/TextStyle').header}>Girl and Cosplay</Text>
+        <Image style={[require('../Styles/ImageStyle').backgroundImage, position.onAbsolute]} source={require('../Images/p1.jpg')}/>
+        <Text style={[require('../Styles/TextStyle').mainHeader, position.header]}>Travel and Photo</Text>
+        <Item ></Item>
     </View>
     );
 }

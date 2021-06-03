@@ -3,12 +3,16 @@ import {StyleSheet} from 'react-native';
 const imageStyles = StyleSheet.create({
     backgroundImage: {
         flex: 1,
-        position: 'absolute',
-        alignItems: 'center',
-        justifyContent: 'center',
-        resizeMode: 'contain',
+        padding: 5,
+        resizeMode: 'cover',
         opacity: 0.3,
-        height:'100%'
+        height:'100%',
+        width: '100%',
+    },
+    itemImage : {
+        // resizeMode: 'center',
+        height:'100%',
+        width:'100%',
     },
     
   });
