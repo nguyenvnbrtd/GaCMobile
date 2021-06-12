@@ -3,8 +3,7 @@ import React from 'react';
 import { Text, View } from 'react-native';
 import AppLoading from 'expo-app-loading';
 import { useFonts } from 'expo-font';
-
-import Home from './Screens/Home'
+import ItemNavigator from './routes/ItemNavigator'
 
 export default props => {
     let [fontsLoaded] = useFonts({
@@ -12,5 +11,5 @@ export default props => {
     });
 
     if (!fontsLoaded) return <AppLoading />;
-    else return <Home/>;
+    else return <ItemNavigator/>;
 };

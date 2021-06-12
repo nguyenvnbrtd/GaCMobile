@@ -10,7 +10,10 @@ const positionStyle = StyleSheet.create({
     onAbsolute: {
         position: 'absolute',
     },
-    
+    centerContent:{
+        alignItems: 'center', 
+        justifyContent: 'center',
+    },    
 
     header: {
         position: 'relative',
